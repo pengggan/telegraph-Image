@@ -51,7 +51,8 @@ async function handleRequest(context) {
             } else {
                 if (ratingApi) {
                     const rating = await getModerateContentRating(ratingApi, url.pathname);
-                    await insertImgInfo(env.IMG, url.pathname, Referer, clientIP, rating.rating, 1, formattedDate);
+                    const rating_index = rating.rating ? rating.rating : rating.rating_index
+                    await insertImgInfo(env.IMG, url.pathname, Referer, clientIP, rating_index, 1, formattedDate);
                     if (rating.rating == 3) {
                         return Response.redirect("https://img.penggan0.cloudns.be/file/ef474ff664b5a09f8646e.png", 302);
                     } else {

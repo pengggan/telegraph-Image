@@ -1,7 +1,24 @@
 # telegraph-Image
 
 
-### [Demo](https://img.131213.xyz/)
+### Demo
+[https://img.131213.xyz](https://img.131213.xyz/)
+
+### 测试
+[https://testimg.131213.xyz/](https://testimg.131213.xyz/)
+> 测试账号：admin
+
+> 测试密码：admin
+
+
+
+### 新版本dev分支
+
+[https://telegraph-image-e49.pages.dev/](https://telegraph-image-e49.pages.dev/)
+> 测试账号：admin
+
+> 测试密码：admin
+
 
 ### 开发计划
 - [x] 后台管理
@@ -67,20 +84,10 @@
 
 
 
-### 自定义cdn加速
-> 默认是使用cloudflare ,修改 `asset/js/upload.js#L219` 即可
+### Star History
 
-+ 如用cachefly加速 
+[![Star History Chart](https://api.star-history.com/svg?repos=x-dr/telegraph-Image&type=Date)](https://star-history.com/#x-dr/telegraph-Image&Date)
 
-cachefly绑定cloudflare pages
-<img src="https://img.131213.xyz/file/c19f7ea17ce2027b13dfa.png" />
-
-修改代码
-
-```diff
-- const PROXYURL = ""  //自定义加速域名 默认是使用cloudflare
-+ const PROXYURL = "https://xxxxxxxxxx.cachefly.net"  //自定义加速域名 默认是使用cloudflare
-```
 
 
 
